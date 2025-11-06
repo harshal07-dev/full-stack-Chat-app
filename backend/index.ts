@@ -3,7 +3,7 @@ import http from "http";
 import cors from "cors";
 import colors from "colors";
 import dotenv from "dotenv";
-import connectDB from "./config/db.ts";
+import connectDB from "./config/db";
 
 dotenv.config();
 

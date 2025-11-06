@@ -23,9 +23,8 @@ const UserSchema = new Schema<UserProps>({
   },
   created: {
     type: Date,
-    default: Date.now();
+    default: Date.now(),
   },
 });
-
 
 export default model<UserProps>("User", UserSchema);
