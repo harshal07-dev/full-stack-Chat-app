@@ -1,7 +1,7 @@
-import { Request, Response } from "express";
-import User from "../modals/User.js";
+import type { Request, Response } from "express";
+import User from "../modals/User.ts";
 import bcrypt from "bcryptjs";
-import { generateToken } from "../utils/token.js";
+import { generateToken } from "../utils/token.ts";
 export const RegisterUser = async (
   req: Request,
   res: Response
@@ -77,4 +77,4 @@ export const loginUser = async (req: Request, res: Response): Promise<void> => {
   }
 };
 
-export const LoginUser = async () => {};
+export const LoginUser = loginUser;
